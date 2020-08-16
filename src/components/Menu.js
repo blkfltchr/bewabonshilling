@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
+import logo from '../../static/images/logo.png'
 
 const Header = styled.header`
   background: ${props => props.theme.colors.background};
@@ -27,17 +28,9 @@ const Nav = styled.nav`
       position: relative;
       margin: 0;
       flex-basis: 100%;
-      a {
-        color: black;
-        font-weight: bold;
-        font-size: 24px;
-        @media only screen and (max-width: 540px) {
-          font-size: 18px;
-        }
-        @media only screen and (max-width: 400px) {
-          font-size: 16px;
-        }
-      }
+    }
+    img {
+      max-width: 180px;
     }
     @media only screen and (max-width: 400px) {
       &:nth-of-type(2) {
@@ -58,8 +51,8 @@ const Nav = styled.nav`
     @media only screen and (max-width: 540px) {
       font-size: 14px;
     }
-    @media only screen and (max-width: 400px) {
-      font-size: 12px;
+    @media only screen and (max-width: 450px) {
+      font-size: 10px;
     }
   }
 `
@@ -77,7 +70,7 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/">
-              Bewabon Shilling
+              <img src={logo} />
             </Link>
           </li>
           {menuLinks.map(link => (
