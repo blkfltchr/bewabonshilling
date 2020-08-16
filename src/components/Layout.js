@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Global } from '@emotion/core'
 import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 import { globalStyles } from '../styles/globalStyles.js'
 
 const Root = styled.div`
@@ -43,6 +44,7 @@ const Layout = props => {
         </Skip>
         <Menu />
         <div id="main">{props.children}</div>
+        <Footer />
       </div>
       <Global styles={globalStyles} />
     </Root>

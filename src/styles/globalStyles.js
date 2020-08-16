@@ -110,6 +110,10 @@ export const globalStyles = css`
     flex-direction: column;
     flex: 1 0 auto;
   }
+  #main {
+    flex: 1 0 auto;
+  }
+  }
   footer {
     width: 100%;
   }
