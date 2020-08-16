@@ -4,6 +4,7 @@ const SliderSection = styled.div`
   .slick-slider .slick-list div {
     display: inline-block;
     width: 100%;
+    max-height: 75vw;
   }
   .slick-slider .slick-arrow {
     display: none !important;
