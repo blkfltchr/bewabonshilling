@@ -212,7 +212,7 @@ class ContactForm extends React.Component {
       <div>
         <Text>
           <p>
-            My work is available for sale or by commission. Please don’t hesitate to contact me with any questions or comments.
+            Bewabon Shilling's work is available for sale or by commission. His work is represented by Roberts Gallery, Toronto; Darrell Bell Gallery, Saskatoon; The Collector's Gallery of Art, Calgary; and Lee Contemporary Art, Orillia.
           </p>
           <p>
             <span>Email: <a href="mailto:shilling20@gmail.com">shilling20@gmail.com</a></span>

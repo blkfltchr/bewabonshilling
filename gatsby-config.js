@@ -28,12 +28,16 @@ module.exports = {
         slug: '/',
       },
       {
-        name: 'Bio',
-        slug: '/bio',
-      },
-      {
         name: 'Paintings',
         slug: '/paintings',
+      },
+      {
+        name: 'Videos',
+        slug: '/videos',
+      },
+      {
+        name: 'Bio',
+        slug: '/bio',
       },
       {
         name: 'CV',
