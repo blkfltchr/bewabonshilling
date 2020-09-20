@@ -4,7 +4,6 @@ import Layout from '../components/Layout'
 import CardList from '../components/CardList'
 import Card from '../components/Card'
 import Container from '../components/Container'
-import Pagination from '../components/Pagination'
 import SEO from '../components/SEO'
 
 const Posts = ({ data, pageContext }) => {
@@ -28,7 +27,6 @@ const Posts = ({ data, pageContext }) => {
             ))}
           </CardList>
       </Container>
-      <Pagination context={pageContext} />
     </Layout>
   )
 }

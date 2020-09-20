@@ -32,8 +32,8 @@ module.exports = async ({ graphql, actions }) => {
     createPage,
     component: path.resolve(`./src/templates/posts.js`),
     items: posts,
-    itemsPerFirstPage: config.siteMetadata.postsPerFirstPage || 9,
-    itemsPerPage: config.siteMetadata.postsPerPage || 9,
+    itemsPerFirstPage: 999,
+    itemsPerPage: 999,
     pathPrefix: basePath,
     context: {
       basePath: basePath === '/paintings' ? '' : basePath,

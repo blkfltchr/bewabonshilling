@@ -48,8 +48,6 @@ module.exports = {
         slug: '/contact',
       },
     ],
-    postsPerFirstPage: 9,
-    postsPerPage: 9,
     basePath: '/paintings',
   },
   plugins: [
