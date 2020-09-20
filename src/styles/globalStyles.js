@@ -104,6 +104,10 @@ export const globalStyles = css`
     height: 100vh;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 500.1px) {
+    .bm-menu-wrap, .bm-overlay, .bm-burger-button {
+      display: none;
+    }
   }
   .siteContent {
     display: flex;

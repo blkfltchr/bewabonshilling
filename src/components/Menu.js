@@ -32,8 +32,8 @@ const Nav = styled.nav`
     img {
       max-width: 180px;
     }
-    @media only screen and (max-width: 400px) {
-      &:nth-of-type(2) {
+    @media only screen and (max-width: 500px) {
+      &:not(:first-child) {
         display: none;
       }
     }
