@@ -20,7 +20,7 @@ module.exports = {
     title: 'Bewabon Shilling',
     description:
       'Born in 1977, Bewabon Shilling is the eldest son of the late Ojibway artist Arthur Shilling. His paintings are inspired by his surroundings, and his subject matter consists mainly of his environment and its local inhabitants.',
-    siteUrl: 'https://bewabonshilling.netlify.app',
+    siteUrl: 'https://bewabonshilling.com',
     image: '/images/share.jpg',
     menuLinks: [
       {
