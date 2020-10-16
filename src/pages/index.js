@@ -48,7 +48,7 @@ const Index = data => {
           <h2>{subheading}</h2>
           <h3>{location}</h3>
           <p className="date">{date}</p>
-          <p>{text}</p>
+          <div dangerouslySetInnerHTML={{ __html: text }} />
         </Announcement>
       </Container>
     </Layout>
