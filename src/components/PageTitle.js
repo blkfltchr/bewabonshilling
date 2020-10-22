@@ -6,7 +6,7 @@ const Title = styled.h1`
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  margin: ${props => (props.small ? '1rem 0 2rem 0' : '0 0 1.5rem 0')};
+  margin: ${props => (props.small ? '0 0 2rem 0' : '0 0 1.5rem 0')};
   line-height: 1.2;
   span {
     margin: 0 0 0 0.25em;

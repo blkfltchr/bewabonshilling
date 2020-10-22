@@ -5,6 +5,7 @@ import CardList from '../components/CardList'
 import Card from '../components/Card'
 import Container from '../components/Container'
 import SEO from '../components/SEO'
+import PageTitle from '../components/PageTitle'
 
 const Posts = ({ data, pageContext }) => {
   const posts = data.allContentfulPost.edges
@@ -21,6 +22,9 @@ const Posts = ({ data, pageContext }) => {
     <Layout>
       <SEO title="Paintings" image={ogImage} />
       <Container>
+          <PageTitle small>
+            All Paintings
+          </PageTitle>
           <CardList>
             {posts.map(({ node: post }) => (
               <Card key={post.id} {...post} basePath={basePath} />

@@ -6,10 +6,45 @@ import { push as MobileMenu } from 'react-burger-menu'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import { globalStyles } from '../styles/globalStyles.js'
-import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Root = styled.div`
   font-family: ${props => props.theme.fonts.body};
+
+  .mobile-dropdown {
+    display: inline-block;
+    text-align: center !important;
+  }
+
+  .mobile-dropbtn {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .mobile-dropdown-content {
+    display: none;
+    margin: 10px 0 0 0;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 1000;
+  }
+
+  .mobile-dropdown-content a {
+    color: black;
+    padding: 12px 0;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .mobile-dropdown:hover .mobile-dropdown-content {
+    display: block;
+  }
 `
 
 const Skip = styled.a`
@@ -94,16 +129,36 @@ const Layout = props => {
     }
   }
   useEffect(() => window.addEventListener('keydown', handleFirstTab), [])
-  const { menuLinks } = useSiteMetadata()
 
   return (
     <Root className="siteRoot">
       <MobileMenu right styles={styles}>
-        {menuLinks.map(link => (
-          <Link to={link.slug} activeStyle={activeLinkStyle} key={link.name}>
-            {link.name}
+        <Link to="/" activeStyle={activeLinkStyle}>
+          Home
+        </Link>
+        <div className="mobile-dropdown">
+          <Link to="/paintings" activeStyle={activeLinkStyle} className="mobile-dropbtn">
+            Paintings
           </Link>
-        ))}
+          <div className="mobile-dropdown-content">
+            <Link to="/recent-works">Recent Works</Link>
+            <Link to="/field-series-and-landscapes">Field Series and Landscapes</Link>
+            <Link to="/tree-series">Tree Series</Link>
+            <Link to="/older-works">Older Works</Link>
+          </div>
+        </div>
+        <Link to="/videos" activeStyle={activeLinkStyle}>
+          Videos
+        </Link>
+            <Link to="/bio" activeStyle={activeLinkStyle}>
+          Bio
+        </Link>
+            <Link to="/cv" activeStyle={activeLinkStyle}>
+          CV
+        </Link>
+            <Link to="/contact" activeStyle={activeLinkStyle}>
+          Contact
+        </Link>
       </MobileMenu>
       <div className="siteContent">
         <Skip href="#main" id="skip-navigation">

@@ -31,6 +31,10 @@ const Announcement = styled.div`
     margin: 0 0 0.5em 0;
   }
 
+  a {
+    color: #0645AD;
+  }
+
   .date {
     font-style: italic;
   }
