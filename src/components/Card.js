@@ -30,6 +30,9 @@ const Post = styled.li`
     .gatsby-image-wrapper {
       height: 0;
       padding-bottom: 60%;
+      img {
+        object-position: center bottom !important;
+      }
       @media screen and (min-width: ${props => props.theme.responsive.small}) {
         padding-bottom: ${props => (props.featured ? '40%' : '60%')};
       }

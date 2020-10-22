@@ -4,6 +4,7 @@ const SliderSection = styled.div`
   .slick-slider .slick-list div {
     display: inline-block;
     width: 100%;
+    max-height: calc(55vh - 1px);
   }
   .slick-slider .slick-arrow {
     display: none !important;
@@ -73,10 +74,10 @@ const SliderSection = styled.div`
   .slick-slider .slick-list div img {
     width: 100%;
     margin: 0;
+    object-position: center bottom !important;
   }
   .slick-slider .slick-list .site-Banner:before {
     content: "";
-    background: #0000004a;
     position: absolute;
     top: 0;
     left: 0;
