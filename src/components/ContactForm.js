@@ -65,6 +65,9 @@ const Form = styled.form`
     opacity: ${props => (props.overlay ? '.8' : '0')};
     visibility: ${props => (props.overlay ? 'visible' : 'hidden')};
   }
+  a {
+    color: #0000EE;
+  }
 `
 
 const Name = styled.input`

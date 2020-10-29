@@ -32,7 +32,7 @@ const Announcement = styled.div`
   }
 
   a {
-    color: #0645AD;
+    color: #0000EE;
   }
 
   .date {
