@@ -31,7 +31,7 @@ const Post = styled.li`
       height: 0;
       padding-bottom: 60%;
       img {
-        object-position: center bottom !important;
+        object-position: ${props => props.position};
       }
       @media screen and (min-width: ${props => props.theme.responsive.small}) {
         padding-bottom: ${props => (props.featured ? '40%' : '60%')};
@@ -49,9 +49,15 @@ const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {
   return (
     <>
       {heroImage && body && (
-        <Post featured={props.featured}>
+        <Post
+          featured={props.featured}
+          position={`center ${props.metaDescription.internal.content} !important`}
+        >
           <Link to={`${props.basePath}/${slug}/`}>
-            <StyledImg fluid={heroImage.fluid} backgroundColor={'#eeeeee'} />
+            <StyledImg
+              fluid={heroImage.fluid}
+              backgroundColor={'#eeeeee'}
+            />
           </Link>
         </Post>
       )}

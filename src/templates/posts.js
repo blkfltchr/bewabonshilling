@@ -57,6 +57,11 @@ export const query = graphql`
               src
             }
           }
+          metaDescription {
+            internal {
+              content
+            }
+          }
           body {
             childMarkdownRemark {
               timeToRead
