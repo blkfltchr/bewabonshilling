@@ -43,6 +43,8 @@ const Post = styled.li`
 const StyledImg = styled(Img)`
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
+  min-height: 245px;
+  min-width: 245px;
 `
 
 const Card = ({ slug, heroImage, title, publishDate, body, ...props }) => {

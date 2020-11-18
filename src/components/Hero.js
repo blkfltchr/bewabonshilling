@@ -12,9 +12,10 @@ const BgImg = styled(Img)`
   width: 90%;
   max-width: 650px;
   max-height: 75vh;
-  &::before {
+  &::before,
+  &::after {
     content: '';
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0) !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,6 +24,9 @@ const BgImg = styled(Img)`
     height: 100%;
     width: 100%;
     z-index: 1;
+  }
+  img {
+    object-fit: contain !important;
   }
 `
 
