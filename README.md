@@ -49,9 +49,9 @@ Edit siteMeta data in [`/src/gatsby-config.js`](https://github.com/blkfltchr/gat
 
 ```js
   siteMetadata: {
-    title: 'Gatsby Freelance Starter', // Title of the website
-    description: // Description of the website
-      'A template to quickly and easily bootstrap freelance projects with Gatsby, Contentful and Netlify.',
+    title: 'Title of the website',
+    description:
+      'Description of the website',
     siteUrl: 'https://website.com', // Website URL. Do not include trailing slash
     image: '/images/share.jpg', // Path to default image for SEO
     menuLinks: [ // The links used in the top menu
@@ -60,31 +60,25 @@ Edit siteMeta data in [`/src/gatsby-config.js`](https://github.com/blkfltchr/gat
         slug: '/',
       },
       {
+        name: 'Portfolio',
+        slug: '/portfolio',
+      },
+      {
         name: 'About',
         slug: '/about',
-      },
-      {
-        name: 'Services',
-        slug: '/services',
-      },
-      {
-        name: 'Blog',
-        slug: '/blog',
       },
       {
         name: 'Contact',
         slug: '/contact',
       },
     ],
-    postsPerFirstPage: 7, // Number of posts on the first page
-    postsPerPage: 6, // Number of posts used on all other pages
     /*
       Root URL for posts and tags
       For example: 'blog' will result in:
         - www.example.com/blog/
         - www.example.com/blog/post-name/
     */
-    basePath: '/blog', // All posts default to /blog (change to /projects) if you replace the blog with a portfolio.
+    basePath: '/blog', // All posts default to /blog (change to /portfolio) if you replace the blog with a portfolio.
   }
 ```
 
